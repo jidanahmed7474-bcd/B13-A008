@@ -1,0 +1,82 @@
+.animal-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.35s ease;
+  border: 1px solid var(--border);
+}
+.animal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-img-wrap {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.animal-card:hover .card-img { transform: scale(1.06); }
+
+.card-badges {
+  position: absolute;
+  top: 12px; left: 12px;
+  display: flex;
+  gap: 6px;
+}
+
+.card-body { padding: 18px; }
+
+.card-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+.card-breed {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.card-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.card-meta span {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--cream);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.price-label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.price-value {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+}
+
+.card-btn { padding: 9px 18px; font-size: 13px; white-space: nowrap; }
