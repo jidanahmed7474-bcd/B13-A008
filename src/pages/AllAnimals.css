@@ -1,0 +1,87 @@
+.animals-page { padding-bottom: 80px; }
+
+.page-hero {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  padding: 60px 0 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.page-hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: var(--gold-light);
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.page-hero-title { font-size: clamp(28px, 4vw, 44px); color: white; margin-bottom: 10px; }
+.page-hero-sub { color: rgba(255,255,255,0.75); font-size: 16px; }
+
+.controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 20px 24px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.filter-tabs { display: flex; gap: 10px; flex-wrap: wrap; }
+.filter-tab {
+  padding: 9px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--cream);
+  color: var(--text);
+  border: 2px solid var(--border);
+  transition: all 0.25s;
+}
+.filter-tab.active, .filter-tab:hover {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+.sort-wrap { display: flex; align-items: center; gap: 10px; }
+.sort-wrap label { font-size: 14px; font-weight: 600; color: var(--text-muted); }
+.sort-select {
+  padding: 9px 16px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+.sort-select:focus { border-color: var(--green); }
+
+.result-count {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.animals-grid-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 28px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+.empty-icon { font-size: 60px; margin-bottom: 20px; }
+.empty-state h3 { font-size: 22px; color: var(--green-dark); margin-bottom: 10px; }
+.empty-state p { color: var(--text-muted); }
